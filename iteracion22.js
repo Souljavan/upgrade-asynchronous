@@ -1,7 +1,7 @@
 const getCharacters = async () => {
-    await fetch('https://rickandmortyapi.com/api/character')
-    .then(res => res.json())
-    .then(characters => console.log(characters));
+    let resultfetch = await fetch('https://rickandmortyapi.com/api/character')
+    let personajes= await resultfetch.json()
+    console.log(personajes)
 }
 
 getCharacters();
